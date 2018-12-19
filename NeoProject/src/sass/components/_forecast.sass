@@ -1,3 +1,5 @@
+section
+	position: relative
 .forecast
 	max-width: 1000px
 	margin: 0 auto
@@ -29,9 +31,20 @@
 		+f(30px, 700)
 		color: #fff
 		transition: .3s
-		&:hover
+		+hover
 			background: $navy
 			border: 8px solid $navy
+
+.forecast__box1
+	position: absolute
+	top: -65px
+	right: 7.5%
+	z-index: -2
+.forecast__box2
+	position: absolute
+	top: 60px
+	left: 0
+	z-index: -2
 .graph
 	background: url('../../img/forecast.png')
 	+contain

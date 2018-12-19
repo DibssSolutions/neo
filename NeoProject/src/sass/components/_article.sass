@@ -1,0 +1,36 @@
+article
+	margin-top: 142px
+.article
+	height: 1160px
+	background: #fff
+	color: $darkblue
+	border-radius: 16px
+	& h3
+		+f(60px, 600)
+		padding: 73px 0 30px 96px
+
+.post
+	display: flex
+	flex-direction: column
+	flex-wrap: wrap
+	height: 82%
+	width: 83%
+	margin: 0 auto
+.post__item
+	display: flex
+	width: 450px
+	margin-bottom: 35px
+	&:nth-child(4)
+		margin-left: 75px
+	&:nth-child(5)
+		margin-left: 75px
+	&:nth-child(6)
+		margin-left: 75px
+	& svg
+		width: 20%
+	& p
+		+f(18px, 300)
+		width: 95%
+		position: relative
+		top: -10px
+		line-height: 2
