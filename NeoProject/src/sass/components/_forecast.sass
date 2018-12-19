@@ -1,0 +1,40 @@
+.forecast
+	max-width: 1000px
+	margin: 0 auto
+	position: relative
+	& h3
+		+f(60px, 600)
+		margin: 41px 0 0 23px
+	& p
+		+f(24px, 600)
+		margin-left: 23px
+		margin-top: 2px
+.currency
+	display: flex
+	margin-top: 40px
+	margin-left: 23px
+	& li
+		margin-right: 30px
+		width: 136px
+		height: 84px
+	& a
+		display: block
+		text-align: center
+		text-transform: uppercase
+		border: 8px solid #223e5c
+		width: 136px
+		height: 84px
+		line-height: 68px
+		border-radius: 8px
+		+f(30px, 700)
+		color: #fff
+		transition: .3s
+		&:hover
+			background: $navy
+			border: 8px solid $navy
+.graph
+	background: url('../../img/forecast.png')
+	+contain
+	height: 562px
+	margin-top: 42px
+	margin-left: 15px
