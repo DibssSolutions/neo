@@ -7,15 +7,14 @@
 		left: -78px
 		pointer-events: none
 		+nosel
+		z-index: -1
 	&__heading
 		max-width: 600px
 		text-align: center
-		// margin-left: auto
 		margin: 118px 86px 0 auto
 		line-height: 1.2
 		& h2
 			+f(72px, 600)
-			// line-height: 1.2
 		& p
 			+f(30px, 600)
 			margin: 7px 0 20px 13px
@@ -31,7 +30,7 @@
 		justify-content: center
 		align-items: center
 		position: relative
-		z-index: -1
+		z-index: -2
 	&__tablet-inner
 		min-width: 1074px
 		min-height: 624px
@@ -43,21 +42,13 @@
 	&__tablet-icon
 		+vcenter
 		z-index: 1
-	&__bg
-		width: 400%
-		height: 355%
-		+rotate(30)
-		background: $darkblue
-		position: absolute
-		left: -140%
-		top: 1175px
-		z-index: -3
 	&__box1
 		position: absolute
-		top: 396px
+		top: 40%
 		left: 7%
-		z-index: -1
+		z-index: -2
 	&__box2
 		position: absolute
 		top: 545px
 		right: 10%
+		z-index: -2
