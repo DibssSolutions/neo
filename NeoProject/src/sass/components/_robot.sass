@@ -1,60 +1,63 @@
-.section_robot
-	background: url('../../img/robot2.png')
-	background-repeat: no-repeat
-	background-position: 37% 0%
-	height: 1450px
-	position: relative
-	top: -76px
-.container--relative
-	position: relative
 .robot
-	text-align: center
-	width: 600px
-	position: absolute
-	right: 75px
-	top: 135px
-	& h2
-		+f(72px, 600)
+	&_container
+		position: relative
+	&__img
+		position: absolute
+		top: -135px
+		left: -78px
+		pointer-events: none
+		+nosel
+	&__heading
+		max-width: 600px
+		text-align: center
+		// margin-left: auto
+		margin: 118px 86px 0 auto
 		line-height: 1.2
-	& p
-		+f(30px, 600)
-		margin: 5px 0 20px
-		line-height: 1.7
+		& h2
+			+f(72px, 600)
+			// line-height: 1.2
+		& p
+			+f(30px, 600)
+			margin: 7px 0 20px 13px
+			line-height: 1.6
 
-.tablet__wrapper
-	width: 100%
-	background: #fff
-	height: 720px
-	border-radius: 16px
-	position: absolute
-	top: 705px
-	z-index: -1
-	margin-left: 7px
-.tablet__inner
-	width: 100%
-	max-width: 1074px
-	height: 624px
-	border-radius: 8px
-	margin: 48px auto
-	background: $darkgray
-	display: flex
-	justify-content: center
-	align-items: center
-
-.bg
-	width: 400%
-	height: 142%
-	+rotate(30)
-	background: $darkblue
-	position: absolute
-	left: -140%
-	top: 1076px
-	z-index: -2
-.robot__box1
-	position: absolute
-	top: 300px
-	left: 7%
-.robot__box2
-	position: absolute
-	top: 455px
-	right: 10%
+	&__tablet-wrapper
+		width: 100%
+		background: #fff
+		height: 720px
+		border-radius: 16px
+		margin-top: 210px
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		z-index: -1
+	&__tablet-inner
+		min-width: 1074px
+		min-height: 624px
+		border-radius: 8px
+		background: $darkgray
+		display: flex
+		justify-content: center
+		align-items: center
+	&__tablet-icon
+		+vcenter
+		z-index: 1
+	&__bg
+		width: 400%
+		height: 160%
+		+rotate(30)
+		background: $darkblue
+		position: absolute
+		left: -140%
+		top: 950px
+		z-index: -3
+	&__box1
+		position: absolute
+		top: 173px
+		left: 7%
+		z-index: -1
+	&__box2
+		position: absolute
+		top: 320px
+		right: 10%
