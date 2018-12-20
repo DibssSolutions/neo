@@ -1,17 +1,33 @@
-<section>
-	<div class="forecast">
-		<h3>Popular forecasts</h3>
-		<p>The forecasts are updated every 30 minutes</p>
-		<ul class="currency">
-			<li><a href="#">btc</a></li>
-			<li><a href="#">ltc</a></li>
-			<li><a href="#">eth</a></li>
-			<li><a href="#">xrp</a></li>
-			<li><a href="#">dash</a></li>
-			<li><a href="#">xmr</a></li>
+<section class="forecast">
+	<div class="container forecast__container">
+		<h3 class="forecast__heading">Popular forecasts</h3>
+		<p class="forecast__desc">The forecasts are updated every 30 minutes</p>
+		<ul class="forecast__currency currency">
+			<li><button type="button" class="currency__item">btc</button></li>
+			<li><button type="button" class="currency__item">ltc</button></li>
+			<li><button type="button" class="currency__item">eth</button></li>
+			<li><button type="button" class="currency__item">xrp</button></li>
+			<li><button type="button" class="currency__item">dash</button></li>
+			<li><button type="button" class="currency__item">xmr</button></li>
 		</ul>
 	</div>
 	<img src="../../img/box-darkS.png" alt="box-dark" class="forecast__box1">
 	<img src="../../img/box-darkB.png" alt="box-dark" class="forecast__box2">
-	<div class="graph"></div>
+	<div class="forecast__graph graph">
+		<div class="graph__indicators indicators">
+			<div class="indicators__item indicator">
+				<p class="indicator__main indicator__main_centered">xrp/usd</p>
+			</div>
+			<div class="indicators__item indicator">
+				<p class="indicator__aside">now</p>
+				<p class="indicator__main">12,550</p>
+			</div>
+			<div class="indicators__item indicator">
+				<p class="indicator__aside">24 hours</p>
+				<p class="indicator__main">12,550</p>
+				<p class="indicator__aside"><span>317.00 (5.10%)</span></p>
+			</div>
+		</div>
+		<img src="../../img/forecast.png" alt="" class="graph__img">
+	</div>
 </section>
