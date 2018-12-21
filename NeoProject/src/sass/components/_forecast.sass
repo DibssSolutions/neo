@@ -13,7 +13,7 @@
 	&__currency
 		display: flex
 		margin-top: 40px
-		margin-left: 15px
+		padding: 0 15px
 		& li
 			margin-right: 30px
 			width: 136px
@@ -36,8 +36,10 @@
 		text-transform: uppercase
 		border: 8px solid #223e5c
 		background: transparent
-		width: 136px
-		height: 84px
+		max-width: 136px
+		width: 100%
+		max-height: 84px
+		height: 100%
 		line-height: 68px
 		border-radius: 8px
 		+f(30px, 700)
@@ -55,6 +57,8 @@
 		margin: 0 auto
 		position: relative
 		z-index: -2
+		width: 100%
+		padding: 0 30px
 
 .indicators
 	display: flex

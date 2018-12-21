@@ -1,0 +1,130 @@
+.footer
+	padding-top: 165px
+	min-height: 760px
+	overflow: hidden
+	&__container
+		max-width: 970px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		position: relative
+	&__bg
+		background: $darkblue
+		position: absolute
+		width: 200%
+		height: 140%
+		+rotate(30)
+		z-index: -2
+		top: 57%
+		left: -120%
+		pointer-events: none
+	&__telegram
+		// width: 50%
+		padding: 70px 0
+	&__form
+		// width: 50%
+	&__baseline
+		width: 100%
+	&__box1
+		position: absolute
+		z-index: -1
+		pointer-events: none
+		right: -32%
+		top: -12%
+	&__box2
+		position: absolute
+		z-index: -1
+		pointer-events: none
+		left: -38%
+		top: 18%
+
+.telegram
+	text-align: center
+	&__links-wrapper
+		padding-bottom: 10px
+	&__link
+		margin-bottom: 20px
+		min-width: 370px
+		padding: 20px
+		padding-right: 47px
+		color: $darkblue
+		background: $white
+		+tr(300ms)
+		&:focus
+			color: $darkblue
+		+hover
+			background-color: lighten($darkblue, 5%)
+			color: $white
+			.telegram__icon path
+				fill: $white
+		&:active
+			background-color: darken($darkblue, 5%)
+	&__icon
+		position: relative
+		top: 5px
+		right: 5px
+		& path
+			+tr(300ms)
+	&__mail
+		+f(18px, 600)
+
+.form
+	max-width: 500px
+	min-height: 441px
+	border: 16px solid $lightnavy
+	border-radius: 16px
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__heading
+		+f(60px, 200)
+		padding: 44px 50px 16px
+		line-height: 1
+		& span
+			font-weight: 600
+	&__input
+		width: 100%
+		max-width: 370px
+		background: transparent
+		border-bottom: 2px solid $lightnavy
+		padding: 20px
+		padding-left: 15px
+		+f(24px, 600)
+		color: $white
+		+placeholder-color($white)
+	&__button
+		margin-top: 40px
+		min-width: 370px
+
+.baseline
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-top: 50px
+
+.socials
+	display: flex
+	&__item
+		display: inline-block
+		min-height: 36px
+		min-width: 36px
+		border: 4px solid $white
+		border-radius: 10px
+		position: relative
+		margin-right: 12px
+		& .facebook
+			position: absolute
+			top: 27%
+			left: 48%
+		& .insta
+			position: absolute
+			top: 14%
+			left: 22%
+		& .youtube, .vk
+			+vcenter
+
+.aside
+	display: flex
+	min-width: 240px
+	justify-content: space-between
+	+f(18px, 600)
