@@ -8,18 +8,31 @@
 		pointer-events: none
 		+nosel
 		z-index: -1
+		+md
+			width: 826px
 	&__heading
 		max-width: 660px
 		text-align: center
 		margin: 118px 45px 0 auto
 		line-height: 1.2
 		padding: 0 30px
+		+md
+			max-width: 460px
+			margin-top: 80px
+			margin-right: 0
 		& h2
 			+f(72px, 600)
+			+md
+				+f(48px, 600)
 		& p
 			+f(30px, 600)
 			margin: 7px 0 20px 13px
 			line-height: 1.6
+			+md
+				+f(18px, 600)
+	&__button
+		+md
+			min-width: 260px
 
 	&__tablet-wrapper
 		width: 100%
@@ -33,10 +46,13 @@
 		position: relative
 		z-index: -2
 		padding: 0 48px
+		+md
+			margin-top: 134px
+			height: 472px
 	&__tablet-inner
 		max-width: 1074px
 		width: 100%
-		min-height: 624px
+		max-height: 624px
 		border-radius: 8px
 		background: $darkgray
 		display: flex
@@ -50,8 +66,17 @@
 		top: 6.2%
 		left: 7%
 		z-index: -2
+		+md
+			left: -6%
+			top: 4%
 	&__box2
 		position: absolute
 		top: 545px
 		right: 10%
 		z-index: -2
+		+md
+			right: -4%
+			top: 340px
+.robot__tablet-video
+	+md
+		height: 420px

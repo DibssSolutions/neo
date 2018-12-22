@@ -3,24 +3,40 @@
 		display: flex
 		padding: 60px 0 0
 		max-width: 1060px
+		+md
+			padding-top: 50px
 	&__logo
 		display: flex
 		align-items: center
 		margin-left: 55px
+		+md
+			margin-left: 20px
 		& img
 			width: 44px
 			height: 44px
 			margin-right: 12px
+			+md
+				width: 33px
+				height: 33px
 		& .title
 			line-height: 1
 			& h1
 				+f(24px, 600)
+				+md
+					+f(18px, 600)
 				& span
 					color: #56ecf6
 			& p
 			+f(13px, 500)
+			+md
+				+f(9.75px, 500)
 	&__menu
 		margin-left: auto
+	&__lang
+		+hover
+			.lang__current
+				color: $darkblue
+				background: #fff
 
 .nav
 	display: flex
@@ -45,6 +61,8 @@
 		background: #fff
 		color: $darkblue
 		border-radius: 16px
+		+md
+			min-width: 96px
 
 .header__lang
 	position: relative
@@ -67,6 +85,10 @@
 		background: #fff
 		border-radius: 16px
 		color: $darkblue
+		+md
+			background: none
+			color: $white
+			min-width: 100%
 		+hover
 			text-decoration: underline
 	& .lang__list

@@ -1,8 +1,12 @@
 .news
 	margin-top: 110px
+	+md
+		margin-top: 50px
 	&__container
 		max-width: 1032px
 		position: relative
+		+md
+			max-width: 860px
 	&__box
 		position: absolute
 		right: -38%
@@ -10,15 +14,22 @@
 		pointer-events: none
 	&__heading
 		+f(60px, 600)
+		+md
+			+f(48px, 600)
+			z-index: 2
+			position: relative
 	&__button
 		margin: 30px auto
 		padding: 22px 30px
 		max-width: 320px
 		display: block
+		width: 100%
+		+md
+			max-width: 216px
+			padding: 13px
 
 .news-inner
 	display: flex
-	// flex-wrap: wrap
 	margin-top: 26px
 	&__item
 		margin-right: 36px
@@ -32,10 +43,15 @@
 		height: 300px
 		border-radius: 8px
 		background: #222
+		+md
+			max-width: 216px
+			height: 216px
 	&__heading
 		+f(30px, 600)
 		margin: 15px 0
 		line-height: 1.25
+		+md
+			+f(24px, 600)
 	&__descr
 		+f(14px, 400)
 		line-height: 1.6

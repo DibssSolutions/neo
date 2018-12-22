@@ -1,5 +1,7 @@
 article
 	margin-top: 142px
+	+md
+		margin-top: 50px
 .article
 	background: #fff
 	color: $darkblue
@@ -9,10 +11,13 @@ article
 	&__heading
 		+f(60px, 600)
 		padding: 80px 100px 0
+		+md
+			+f(48px, 600)
+			padding: 40px
+			padding-bottom: 0
 
 .post
 	display: flex
-	// width: 100%
 	max-width: 1100px
 	margin: 0 auto
 	flex-direction: column
@@ -20,24 +25,24 @@ article
 	max-height: 1120px
 	padding: 35px
 	align-items: flex-end
+	+md
+		max-height: 950px
 .post__item
 	display: flex
 	max-width: 460px
 	word-wrap: break-word
 	width: 50%
 	margin: 0 18px 45px 0
-	// margin: 0 20px 47px 40px
-	// padding: 0 5px
-	// &:nth-child(4)
-	// 	margin-left: auto
-	// &:nth-child(5)
-	// 	margin-left: auto
-	// &:nth-child(6)
-	// 	margin-left: auto
 	& svg
 		margin-right: 27px
+		+md
+			margin-right: 10px
 	& p
 		+f(18px, 300)
 		max-width: 80%
 		margin-top: -10px
 		line-height: 2
+		+md
+			+f(14px, 300)
+	+md
+		margin-right: 0

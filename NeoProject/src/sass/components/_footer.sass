@@ -8,6 +8,8 @@
 		flex-wrap: wrap
 		justify-content: space-between
 		position: relative
+		+md
+			max-width: 860px
 	&__bg
 		background: $darkblue
 		position: absolute
@@ -18,11 +20,13 @@
 		top: 52%
 		left: -120%
 		pointer-events: none
+		+md
+			top: 48%
 	&__telegram
-		// width: 50%
 		padding: 70px 0
+		+md
+			padding: 50px 0
 	&__form
-		// width: 50%
 	&__baseline
 		width: 100%
 	&__box1
@@ -31,12 +35,22 @@
 		pointer-events: none
 		right: -28%
 		top: -12%
+		+md
+			right: 0
+			top: -17%
+			z-index: 1
 	&__box2
 		position: absolute
 		z-index: -1
 		pointer-events: none
 		left: -32.5%
 		top: 18%
+		+md
+			top: 93%
+			left: 50%
+			transform: translateX(-50%)
+	+md
+		padding-top: 100px
 
 .telegram
 	text-align: center
@@ -59,6 +73,9 @@
 				fill: $white
 		&:active
 			background-color: darken($darkblue, 5%)
+		+md
+			min-width: 264px
+			padding: 19px 0
 	&__icon
 		position: relative
 		top: 5px
@@ -82,6 +99,9 @@
 		line-height: 1
 		& span
 			font-weight: 600
+		+md
+			+f(48px, 200)
+			padding: 30px
 	&__input
 		width: 100%
 		max-width: 370px
@@ -92,15 +112,25 @@
 		+f(24px, 600)
 		color: $white
 		+placeholder-color($white)
+		+md
+			+f(18px, 600)
+			max-width: 280px
 	&__button
 		margin-top: 40px
 		min-width: 370px
+		+md
+			min-width: 260px
+	+md
+		max-width: 380px
+		min-height: 380px
 
 .baseline
 	display: flex
 	justify-content: space-between
 	align-items: center
 	margin-top: 50px
+	+md
+		margin-top: 70px
 
 .socials
 	display: flex
