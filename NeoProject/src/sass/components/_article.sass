@@ -27,6 +27,10 @@ article
 	align-items: flex-end
 	+md
 		max-height: 950px
+	+sm
+		max-height: none
+		align-items: center
+		padding: 20px
 .post__item
 	display: flex
 	max-width: 460px
@@ -44,5 +48,12 @@ article
 		line-height: 2
 		+md
 			+f(14px, 300)
+		+sm
+			line-height: 22px
+		+ms
+			max-width: 74%
 	+md
 		margin-right: 0
+	+sm
+		max-width: none
+		width: 100%

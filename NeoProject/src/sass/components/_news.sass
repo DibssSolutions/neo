@@ -7,6 +7,8 @@
 		position: relative
 		+md
 			max-width: 860px
+		+sm
+			max-width: 700px
 	&__box
 		position: absolute
 		right: -38%
@@ -18,6 +20,9 @@
 			+f(48px, 600)
 			z-index: 2
 			position: relative
+		+sm
+			+f(36px, 600)
+			padding: 0 50px
 	&__button
 		margin: 30px auto
 		padding: 22px 30px
@@ -31,12 +36,19 @@
 .news-inner
 	display: flex
 	margin-top: 26px
+	+sm
+		flex-wrap: wrap
+		justify-content: center
 	&__item
 		margin-right: 36px
 		max-width: 300px
 		width: 100%
 		&:last-child
 			margin-right: 0
+		+sm
+			max-width: none
+			width: 100%
+			text-align: center
 	&__img
 		max-width: 300px
 		width: 100%
@@ -46,6 +58,9 @@
 		+md
 			max-width: 216px
 			height: 216px
+		+sm
+			max-width: 290px
+			margin: 0 auto
 	&__heading
 		+f(30px, 600)
 		margin: 15px 0

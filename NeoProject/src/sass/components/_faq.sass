@@ -13,6 +13,8 @@
 		+md
 			left: 80%
 			top: -10%
+		+sm
+			left: -20%
 	&__container
 		max-width: 1082px
 	&__heading
@@ -27,11 +29,17 @@
 			max-width: 540px
 			padding: 40px
 			margin: 0
+		+sm
+			+f(36px, 600)
 	+md
 		margin-bottom: 0
+	+sm
+		margin-top: 70px
 
 .accordion
 	margin-left: 30px
+	+sm
+		margin-left: 0
 	&__item
 		display: flex
 		cursor: pointer
@@ -56,6 +64,10 @@
 		max-width: 92%
 		+md
 			+f(24px, 600)
+			max-width: 90%
+		+sm
+			max-width: 80%
+			+f(18px, 600)
 	&__answer
 		width: 100%
 		padding-top: 12px
@@ -68,3 +80,5 @@
 		line-height: 2
 		+md
 			+f(16px, 300)
+		+sm
+			+f(14px, 300)

@@ -8,11 +8,15 @@
 		padding: 0 20px 2px
 		+md
 			+f(48px, 600)
+		+sm
+			+f(30px, 600)
 	&__desc
 		+f(24px, 600)
 		padding: 0 20px
 		+md
 			+f(18px, 600)
+		+sm
+			+f(16px, 600)
 	&__currency
 		display: flex
 		flex-wrap: wrap
@@ -25,6 +29,12 @@
 			+md
 				max-width: 100px
 				max-height: 64px
+			+sm
+				max-width: none
+				width: 30%
+				margin-bottom: 20px
+		+sm
+			margin-top: 20px
 	&__box1
 		position: absolute
 		top: -65px
@@ -62,8 +72,8 @@
 			border: 8px solid $navy
 		+md
 			+f(18px, 700)
-		// 	max-width: 100px
-		// 	max-height: 64px
+		+sm
+			max-width: 120px
 
 .graph
 	margin: 40px auto 0
@@ -75,7 +85,8 @@
 		z-index: -2
 		width: 100%
 		padding: 0 30px
-
+	+sm
+		margin-top: 20px
 .indicators
 	display: flex
 	position: absolute
@@ -84,8 +95,14 @@
 	line-height: 1.3
 	&__item
 		margin-right: 45px
+		&:last-child
+			margin-right: 0
 	+md
 		left: 10%
+	+sm
+		position: static
+		justify-content: center
+		margin-bottom: 20px
 
 .indicator
 	&__main
@@ -93,6 +110,8 @@
 		+f(24px, 700)
 		+md
 			+f(20px, 700)
+		+sm
+			+f(18px,700)
 		&_centered
 			line-height: 2.6
 	&__aside

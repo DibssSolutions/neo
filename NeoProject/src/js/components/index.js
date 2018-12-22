@@ -14,3 +14,9 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+var toggle = document.getElementsByClassName('header__toggle')[0];
+toggle.onclick = function() {
+  var icon = document.getElementsByClassName('header__toggle-icon')[0];
+  icon.classList.toggle('header__toggle-icon_active');
+};
