@@ -2,20 +2,22 @@
 	margin: 140px auto 0
 	position: relative
 	&__container
-		max-width: 1000px
+		max-width: 1050px
 	&__heading
 		+f(60px, 600)
-		margin: 41px 0 2px 0
-		padding: 0 18px
+		padding: 0 20px 2px
 	&__desc
 		+f(24px, 600)
-		padding: 0 18px
+		padding: 0 20px
 	&__currency
 		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
 		margin-top: 40px
-		padding: 0 15px
+		margin-left: 13px
+		// padding: 0 15px
 		& li
-			margin-right: 30px
+			// margin-right: 30px
 			width: 136px
 			height: 84px
 	&__box1
@@ -40,7 +42,7 @@
 		width: 100%
 		max-height: 84px
 		height: 100%
-		line-height: 68px
+		// line-height: 68px
 		border-radius: 8px
 		+f(30px, 700)
 		color: #fff
@@ -63,7 +65,7 @@
 .indicators
 	display: flex
 	position: absolute
-	left: 27%
+	left: 27.4%
 	top: 5.5%
 	line-height: 1.3
 	&__item
@@ -78,6 +80,7 @@
 	&__aside
 		+f(12px, 500)
 		text-align: right
+		margin-left: -15px
 		& span
 			color: $green
 		&_arrow

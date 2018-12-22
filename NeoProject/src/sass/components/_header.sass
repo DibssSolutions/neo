@@ -1,9 +1,12 @@
 .header
-	display: flex
-	padding: 60px 0 0 100px
+	&__container
+		display: flex
+		padding: 60px 0 0
+		max-width: 1060px
 	&__logo
 		display: flex
 		align-items: center
+		margin-left: 55px
 		& img
 			width: 44px
 			height: 44px
@@ -16,9 +19,9 @@
 					color: #56ecf6
 			& p
 			+f(13px, 500)
+	&__menu
+		margin-left: auto
 
-.header__menu
-		margin-left: 144px
 .nav
 	display: flex
 	align-items: center
@@ -47,6 +50,7 @@
 	position: relative
 	z-index: 2
 	top: 5px
+	margin-right: 10px
 	+hover
 		.lang__list
 			opacity: 1

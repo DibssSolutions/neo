@@ -5,35 +5,39 @@ article
 	color: $darkblue
 	border-radius: 16px
 	// max-height: 1160px
+	overflow: hidden
 	&__heading
 		+f(60px, 600)
-		padding: 73px 0 30px 96px
+		padding: 80px 100px 0
 
 .post
 	display: flex
 	// width: 100%
-	max-width: 980px
+	max-width: 1100px
 	margin: 0 auto
 	flex-direction: column
 	flex-wrap: wrap
-	max-height: 1100px
-	padding-bottom: 35px
+	max-height: 1120px
+	padding: 35px
+	align-items: flex-end
 .post__item
 	display: flex
 	max-width: 460px
+	word-wrap: break-word
 	width: 50%
-	margin-bottom: 47px
-	padding: 0 5px
-	&:nth-child(4)
-		margin-left: 65px
-	&:nth-child(5)
-		margin-left: 65px
-	&:nth-child(6)
-		margin-left: 65px
+	margin: 0 18px 45px 0
+	// margin: 0 20px 47px 40px
+	// padding: 0 5px
+	// &:nth-child(4)
+	// 	margin-left: auto
+	// &:nth-child(5)
+	// 	margin-left: auto
+	// &:nth-child(6)
+	// 	margin-left: auto
 	& svg
-		width: 20%
+		margin-right: 27px
 	& p
 		+f(18px, 300)
-		width: 95%
+		max-width: 80%
 		margin-top: -10px
 		line-height: 2
