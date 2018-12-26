@@ -24,6 +24,7 @@
 			margin-right: 0
 		+sm
 			margin: 100px auto
+			padding: 0
 		& h2
 			+f(72px, 600)
 			+md
@@ -39,7 +40,6 @@
 	&__button
 		+md
 			min-width: 260px
-
 	&__tablet-wrapper
 		width: 100%
 		background: #fff
@@ -55,6 +55,16 @@
 		+md
 			margin-top: 134px
 			height: 472px
+		+sm
+			height: 300px
+			margin-top: 526px
+			padding: 0 20px
+			max-width: 500px
+			left: 50%
+			transform: translateX(-50%)
+		+ms
+			height: 190px
+			margin-top: 520px
 	&__tablet-inner
 		max-width: 1074px
 		width: 100%
@@ -66,7 +76,13 @@
 		align-items: center
 	&__tablet-icon
 		+vcenter
-		z-index: 1
+		+sm
+			& svg
+				width: 50%
+				height: 50%
+				position: relative
+				left: 50%
+				transform: translateX(-50%)
 	&__box1
 		position: absolute
 		top: 6.2%
@@ -75,6 +91,8 @@
 		+md
 			left: -6%
 			top: 4%
+		+sm
+			display: none
 	&__box2
 		position: absolute
 		top: 545px
@@ -83,6 +101,18 @@
 		+md
 			right: -4%
 			top: 340px
+		+sm
+			display: none
 .robot__tablet-video
 	+md
 		height: 420px
+	+sm
+			height: 280px
+	+ms
+		height: 170px
+
+.robot__img-small
+	display: none
+	+sm
+		display: block
+		top: 5%

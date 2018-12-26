@@ -5,8 +5,6 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener('click', function() {
-    arrow.classList.toggle('accordion__arrow_active');
-    // this.classList.toggle('active');
     var panel = this.nextElementSibling;
     if (panel.style.display === 'block') {
       panel.style.display = 'none';
@@ -19,6 +17,11 @@ for (i = 0; i < acc.length; i++) {
 var toggle = document.getElementsByClassName('header__toggle')[0];
 toggle.onclick = function() {
   var icon = document.getElementsByClassName('header__toggle-icon')[0];
+  var nav = document.querySelector('.nav');
   icon.classList.toggle('header__toggle-icon_active');
-
+  if (nav.style.display === 'flex') {
+    nav.style.display = 'none';
+  } else {
+    nav.style.display = 'flex';
+  }
 };
