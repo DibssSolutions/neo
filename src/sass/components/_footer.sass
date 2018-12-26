@@ -24,6 +24,9 @@
 		pointer-events: none
 		+md
 			top: 48%
+		+sm
+			top: 60%
+			left: -130%
 	&__telegram
 		padding: 70px 0
 		+md
@@ -46,6 +49,8 @@
 			right: 0
 			top: -17%
 			z-index: 1
+		+sm
+			display: none
 	&__box2
 		position: absolute
 		z-index: -1
@@ -56,6 +61,9 @@
 			top: 93%
 			left: 50%
 			transform: translateX(-50%)
+		+sm
+			left: 80%
+			top: 65%
 	+md
 		padding-top: 100px
 
@@ -135,7 +143,7 @@
 			min-width: 260px
 		+sm
 			min-width: 200px
-			margin-top: 20px
+			margin: 20px 0
 	+md
 		max-width: 380px
 		min-height: 380px
@@ -153,7 +161,7 @@
 	+sm
 		flex-direction: column
 		align-items: flex-start
-		margin: 70px 0
+		margin: 150px 0 70px 0
 
 .socials
 	display: flex
