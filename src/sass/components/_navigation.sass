@@ -1,0 +1,43 @@
+.nav
+	&__list
+		display: flex
+	&__item
+		margin-right: 25px
+		&:last-child
+			margin-right: 30px
+			+md
+				margin-right: 20px
+		+md
+			margin-right: 18px
+	&__link
+		border-bottom: 2px solid transparent
+		+tr(300ms)
+		padding: 5px
+		+hover
+			border-bottom: 2px solid $white
+		+md
+			padding: 2px
+
+.current
+	border-bottom: 2px solid $white
+
+// OPENED
+.nav
+	+sm
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		background: $dot
+		z-index: 1
+		padding: 70px 0 20px
+		&__list
+			flex-direction: column
+			justify-content: center
+			width: 100%
+		&__item
+			text-align: center
+			padding: 5px
+		&__link
+			border-bottom: 2px solid $darkblue
+			color: $darkblue

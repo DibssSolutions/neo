@@ -1,0 +1,21 @@
+<section class="contacts">
+	<div class="contacts__container container">
+		<ul class="contacts__list">
+			{% set telega = ['Telegram bot', 'Telegram group', 'Telegram channel'] %}
+			{% for item in telega %}
+				<li class="contacts__item">
+					<a href="#" class="contacts__link button">
+						{{ mixins.icon('telegram') }}
+						{{ item }}
+					</a>
+				</li>
+			{% endfor %}
+			<li class="contacts__item"><a href="#" class="contacts__link_mail">support@neurobot.trading</a></li>
+		</ul>
+		<form action="" class="contacts__form">
+			<h3 class="contacts__title"><span>Subscribe</span> to our news</h3>
+			<input type="text" class="contacts__input" placeholder="e-mail">
+			<button class="contacts__button button">Subscribe</button>
+		</form>
+	</div>
+</section>

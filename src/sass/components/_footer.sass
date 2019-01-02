@@ -1,193 +1,66 @@
 .footer
-	padding-top: 60px
-	min-height: 660px
-	overflow: hidden
 	&__container
-		max-width: 1030px
+		padding: 50px 0 70px
 		display: flex
-		flex-wrap: wrap
 		justify-content: space-between
 		position: relative
+		max-width: 980px
 		+md
-			max-width: 860px
+			max-width: 768px
+			padding: 63px 36px
 		+sm
-			justify-content: center
-	&__bg
-		background: $darkblue
-		position: absolute
-		width: 200%
-		height: 140%
-		+rotate(30)
-		z-index: -2
-		top: 52%
-		left: -120%
-		pointer-events: none
-		+md
-			top: 48%
-		+sm
-			top: 60%
-			left: -130%
-	&__telegram
-		padding: 70px 0
-		+md
-			padding: 50px 0
-		+sm
-			width: 100%
-	&__form
-		+sm
-			order: -1
-			width: 100%
-	&__baseline
-		width: 100%
+			padding: 120px 15px 45px
+			flex-direction: column
 	&__box1
-		position: absolute
-		z-index: -1
-		pointer-events: none
-		right: -28%
-		top: -12%
+		left: -36.5%
+		bottom: 186%
 		+md
-			right: 0
-			top: -17%
-			z-index: 1
+			display: block
+			bottom: -110px
+			left: calc(50% - 78px)
 		+sm
-			display: none
+			bottom: 95px
+			left: calc(50% + 45px)
 	&__box2
+		right: -32%
+		bottom: 330%
+	&__bg
 		position: absolute
+		width: 500%
+		height: 500%
+		+rotate(30)
+		background: $darkblue
+		top: 225%
+		left: -183%
 		z-index: -1
-		pointer-events: none
-		left: -32.5%
-		top: 18%
 		+md
-			top: 93%
-			left: 50%
-			transform: translateX(-50%)
+			top: 178%
 		+sm
-			left: 80%
-			top: 65%
-	+md
-		padding-top: 100px
-
-.telegram
-	text-align: center
-	&__links-wrapper
-		padding-bottom: 10px
-	&__link
-		margin-bottom: 20px
-		min-width: 370px
-		padding: 20px
-		padding-right: 47px
-		color: $darkblue
-		background: $white
-		+tr(300ms)
-		&:focus
-			color: $darkblue
-		+hover
-			background-color: lighten($darkblue, 5%)
-			color: $white
-			.telegram__icon path
-				fill: $white
-		&:active
-			background-color: darken($darkblue, 5%)
-		+md
-			min-width: 264px
-			padding: 19px 0
-	&__icon
-		position: relative
-		top: 5px
-		right: 5px
-		& path
-			+tr(300ms)
-	&__mail
+			top: 80%
+	&__social-list
+		display: flex
+		margin-left: 15px
+		+sm
+			padding-bottom: 30px
+	&__social
+		margin-right: 13px
+		&:last-child
+			margin-right: 0
+	&__aside
+		display: flex
+		justify-content: space-between
+		align-items: center
 		+f(18px, 600)
-
-.form
-	max-width: 500px
-	min-height: 441px
-	border: 16px solid $lightnavy
-	border-radius: 16px
-	display: flex
-	flex-direction: column
-	align-items: center
-	&__heading
-		+f(60px, 200)
-		padding: 44px 50px 16px
-		line-height: 1
-		& span
-			font-weight: 600
-		+md
-			+f(48px, 200)
-			padding: 30px
 		+sm
-			+f(36px, 200)
-			padding: 30px
-	&__input
-		width: 100%
-		max-width: 370px
-		background: transparent
-		border-bottom: 2px solid $lightnavy
-		padding: 20px
-		padding-left: 15px
-		+f(24px, 600)
-		color: $white
-		+placeholder-color($white)
-		+md
-			+f(18px, 600)
-			max-width: 280px
-		+sm
-			+f(16px, 600)
-			max-width: 200px
-	&__button
-		margin-top: 40px
-		min-width: 370px
-		+md
-			min-width: 260px
-		+sm
-			min-width: 200px
-			margin: 20px 0
-	+md
-		max-width: 380px
-		min-height: 380px
-	+sm
-		max-width: 300px
-		min-height: 340px
+			justify-content: flex-start
+	&__aside-item
+		margin-right: 35px
+		border-bottom: 2px solid transparent
+		+tr(300ms)
+		+hover
+			border-bottom: 2px solid $white
+		&:last-child
+			margin-right: 0
 
-.baseline
-	display: flex
-	justify-content: space-between
-	align-items: center
-	margin-top: 50px
-	+md
-		margin-top: 70px
-	+sm
-		flex-direction: column
-		align-items: flex-start
-		margin: 150px 0 70px 0
-
-.socials
-	display: flex
-	&__item
-		display: inline-block
-		min-height: 36px
-		min-width: 36px
-		border: 4px solid $white
-		border-radius: 10px
-		position: relative
-		margin-right: 12px
-		& .facebook
-			position: absolute
-			top: 27%
-			left: 48%
-		& .insta
-			position: absolute
-			top: 14%
-			left: 22%
-		& .youtube, .vk
-			+vcenter
-	+sm
-		margin-bottom: 30px
-
-.aside
-	display: flex
-	min-width: 240px
-	justify-content: space-between
-	+f(18px, 600)
+.icon-face, .icon-insta, .icon-youtube, .icon-vk
+	font-size: 35px

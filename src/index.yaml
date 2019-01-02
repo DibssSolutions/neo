@@ -2,4 +2,6 @@ ProjectTitle: template
 
 PageList:
 - file: page.html
-  ready: 50
+  ready: 80
+- file: token.html
+  ready: 100

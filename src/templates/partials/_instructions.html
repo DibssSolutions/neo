@@ -1,0 +1,10 @@
+{% import 'data/instructions.html' as data %}
+<section class="instructions">
+	<div class="instructions__container container">
+		<h2 class="instructions__heading heading">How to add NEB Tokens to your wallet?</h2>
+		{% for item in data.steps %}
+			<p class="instructions__descr descr descr_dark">{{item.descr}}</p>
+			<img src="./img/{{item.image}}" alt="steps" class="instructions__img">
+		{% endfor %}
+	</div>
+</section>

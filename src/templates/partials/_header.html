@@ -1,32 +1,35 @@
 <header class="header">
 	<div class="container header__container">
-		<a class="header__logo" href="#">
-			<img src="./img/logo.png" alt="logo">
-			<div class="title">
-				<h1>Neurobot<span>.trading</span></h1>
-				<p>Neural network forecasting</p>
+		<a href="#" class="header__logo">
+			<img src="./img/logo.png" alt="" class="header__img">
+			<div class="header__heading-wrapper">
+				<h1 class="header__heading">
+					Neurobot<span class="header__heading_colored">.trading</span>
+				</h1>
+				<p class="header__subheading">Neural network forecasting</p>
 			</div>
 		</a>
 		<div class="header__toggle">
 			<div class="header__toggle-icon"></div>
 		</div>
-		<nav class="header__menu">
-			<ul class="nav">
-				<li><a href="#" class="navigation__item">Forecasts</a></li>
-				<li><a href="#" class="navigation__item">Tokens</a></li>
-				<li><a href="#" class="navigation__item">About</a></li>
+		<nav class="header__nav nav">
+			<ul class="nav__list">
+				{% set nav = [{ title: 'Forecasts'}, { title: 'Tokens'}, { title: 'About'}] %}
+				{% for item in nav %}
+					<li class="nav__item"><a href="#" class="nav__link {% if loop.index == 2 %} current{% endif %}">{{item.title}}</a></li>
+				{% endfor %}
 			</ul>
 		</nav>
-		<div class="header__login">
-			<ul class="nav">
-				<li><a href="#" class="login__item login_log">Log in</a></li>
-				<li><a href="#" class="login__item login_sign">Sign Up</a></li>
+		<div class="header__login login">
+			<ul class="login__list">
+				<li class="login__item"><a href="#" class="login__link">Log In</a></li>
+				<li class="login__item"><a href="#" class="login__link login__link-round">Sign Up</a></li>
 			</ul>
 		</div>
-		<div class="header__lang">
+		<div class="header__lang lang">
 			<a href="#" class="lang__current">Eng</a>
 			<ul class="lang__list">
-				<li><a class="lang_extra" href="#">Рус</a></li>
+				<li><a class="lang__extra" href="#">Рус</a></li>
 			</ul>
 		</div>
 	</div>

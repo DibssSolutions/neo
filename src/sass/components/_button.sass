@@ -1,24 +1,29 @@
 .button
 	display: inline-block
-	border: none
-	color: #fff
+	color: $white
 	text-decoration: none
 	background-color: $darkblue
-	padding: 22px 67px
+	padding: 17px
 	+f(18px, 600)
 	font-family: $montserrat
 	border-radius: 32px
 	text-align: center
 	outline: none
 	cursor: pointer
+	+mwidth(370)
 	&:focus, &:hover
 		text-decoration: none
-		color: #fff
 		outline: none
-	+hover
-		background-color: lighten($darkblue, 5%)
-	&:active
-		background-color: darken($darkblue, 5%)
 	+md
-		padding: 22px 20px
 		+f(16px, 600)
+		max-width: 330px
+	+sm
+		max-width: 260px
+
+
+.button_white
+	color: $darkblue
+	background: $white
+	+hover
+		color: $white
+		background: $darkblue

@@ -1,0 +1,72 @@
+.form
+	padding-bottom: 20px
+	+md
+		padding-bottom: 0
+	&__input-wrapper
+		width: 100%
+		background: $lightnavy
+		border-radius: 8px
+		padding: 8px
+		margin-bottom: 50px
+		display: flex
+		align-items: center
+		+md
+			padding: 0 0 0 8px
+			margin-bottom: 38px
+		+sm
+			margin-bottom: 20px
+	&__input
+		+mwidth(870)
+		padding: 20px 30px
+		color: $darkblue
+		+f(24px, 800)
+		+md
+			padding: 16px 20px
+			+f(18px, 800)
+		+sm
+			+f(14px, 800)
+			padding: 14px 20px
+	&__input-btn
+		display: inline-block
+		border: none
+		outline: none
+		cursor: pointer
+		background: transparent
+		padding: 15px 27px
+		+md
+			padding: 18px 22px
+		+sm
+			padding: 14px
+	&__button-wrapper
+		display: flex
+		+md
+			justify-content: center
+		+sm
+			flex-direction: column
+			align-items: center
+	&__button
+		margin-right: 46px
+		margin-bottom: 20px
+		padding: 17px
+		border: 3px solid $darkblue
+		+tr(400ms)
+		+hover
+			color: $darkblue
+			background: $white
+			+tr(300ms)
+		&:last-child
+			margin-right: 0
+			+md
+				text-transform: lowercase
+		+md
+			margin-right: 30px
+		+sm
+			margin-right: 0
+			margin-bottom: 15px
+
+.icon-copy
+	fill: none
+	stroke: $white
+	font-size: 3em
+	+md
+		font-size: 30px

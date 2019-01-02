@@ -1,0 +1,27 @@
+{% import 'data/data.html' as data %}
+<section class="roadmap">
+	<img src="./img/box-S.png" alt="box-decor" class="box roadmap__box">
+	<img src="./img/box-xs.png" alt="box-decor" class="box roadmap__box2">
+	<img src="./img/roadmap-top.png" alt="road-top" class="roadmap__part1">
+	<div class="roadmap__bg">
+		<div class="roadmap__container container">
+			<h2 class="roadmap__heading heading heading_white">Roadmap</h2>
+			<p class="roadmap__subheading subheading">2017-2018</p>
+			<ul class="roadmap__list">
+				{% for item in data.list %}
+					<li class="roadmap__item">
+						<img src="./img/{{item.path}}" alt="roadmap-icon" class="roadmap__icon">
+						<ul class="roadmap__date-wrapper">
+							<li class="roadmap__date">{{item.month}}</li>
+							<li class="roadmap__date">{{item.year}}</li>
+						</ul>
+						<div class="roadmap__text">
+							<h3 class="roadmap__heading-small heading-small">{{item.title}}</h3>
+							<p class="roadmap__descr descr">{{item.descr}}</p>
+						</div>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,57 @@
+.contacts
+	padding-top: 50px
+	&__container
+		max-width: 1040px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+	&__list
+		+mwidth(410)
+		text-align: center
+		padding: 20px
+	&__item
+		&:not(:last-child)
+			margin-bottom: 25px
+	&__link
+		color: $darkblue
+		background-color: $white
+		padding: 21px
+		&_mail
+			+f(18px, 600)
+		+tr(400ms)
+		+hover
+			color: $white
+			background-color: $darkblue
+			.icon-telegram
+				fill: $white
+	&__form
+		+mwidth(500)
+		border: 16px solid $lightnavy
+		border-radius: 8px
+		padding: 45px 50px 55px
+		line-height: 1
+	&__title
+		+f(60px, 200)
+		span
+			font-weight: 600
+			display: block
+	&__input
+		margin: 35px 0 48px
+		width: 100%
+		padding: 15px
+		background: transparent
+		border-bottom: 2px solid $lightnavy
+		+placeholder
+			color: $white
+			+f(24px, 600)
+	&__button
+		padding: 20px
+
+
+.icon-telegram
+	fill: $darkblue
+	margin-right: 8px
+	position: relative
+	top: 4px
+	+tr(400ms)

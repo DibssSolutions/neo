@@ -1,0 +1,29 @@
+.lang
+	background: transparent
+	border-radius: 16px
+	padding: 12px
+	+tr(200ms)
+	+hover
+		background: $white
+		.lang__current
+			color: $darkblue
+		.lang__list
+			opacity: 1
+			visibility: visible
+		.lang__extra
+			color: $darkblue
+	&__current
+		margin-bottom: 20px
+		display: inline-block
+		+tr(200ms)
+		+hover
+			text-decoration: underline
+	&__list
+		opacity: 0
+		visibility: hidden
+		+tr(200ms)
+	&__extra
+		+hover
+			text-decoration: underline
+	+md
+		padding-top: 7px
