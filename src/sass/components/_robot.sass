@@ -6,8 +6,7 @@
 		top: -135px
 		left: -40px
 		pointer-events: none
-		+nosel
-		z-index: -1
+		z-index: 1
 		+md
 			width: 826px
 		+sm
@@ -15,9 +14,11 @@
 	&__heading
 		max-width: 660px
 		text-align: center
-		margin: 118px 45px 0 auto
+		margin: 45px 45px 0 auto
 		line-height: 1.2
 		padding: 0 30px
+		position: relative
+		z-index: 2
 		+md
 			max-width: 460px
 			margin-top: 80px
@@ -45,20 +46,20 @@
 		background: #fff
 		height: 720px
 		border-radius: 16px
-		margin-top: 210px
+		margin-top: 220px
 		display: flex
 		justify-content: center
 		align-items: center
 		position: relative
-		z-index: -2
-		padding: 0 48px
+		padding: 48px
 		+md
-			margin-top: 134px
+			margin-top: 144px
 			height: 472px
+			padding: 24px
 		+sm
 			height: 300px
 			margin-top: 526px
-			padding: 0 20px
+			padding: 10px
 			max-width: 500px
 			left: 50%
 			transform: translateX(-50%)
@@ -66,9 +67,7 @@
 			height: 190px
 			margin-top: 520px
 	&__tablet-inner
-		max-width: 1074px
 		width: 100%
-		max-height: 624px
 		border-radius: 8px
 		background: $darkgray
 		display: flex
