@@ -20,33 +20,34 @@
       <!-- HEADER -->
       <header class="header">
         <div class="container header__container">
-          <a class="header__logo" href="#">
-            <img src="./img/logo.png" alt="logo">
-            <div class="title">
-              <h1>Neurobot<span>.trading</span></h1>
-              <p>Neural network forecasting</p>
+          <a href="#" class="header__logo">
+            <img src="./img/logo.png" alt="" class="header__img">
+            <div class="header__heading-wrapper">
+              <h1 class="header__heading"> Neurobot<span class="header__heading_colored">.trading</span>
+              </h1>
+              <p class="header__subheading">Neural network forecasting</p>
             </div>
           </a>
           <div class="header__toggle">
             <div class="header__toggle-icon"></div>
           </div>
-          <nav class="header__menu">
-            <ul class="nav">
-              <li><a href="#" class="navigation__item">Forecasts</a></li>
-              <li><a href="#" class="navigation__item">Tokens</a></li>
-              <li><a href="#" class="navigation__item">About</a></li>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link ">Forecasts</a></li>
+              <li class="nav__item"><a href="#" class="nav__link  current">Tokens</a></li>
+              <li class="nav__item"><a href="#" class="nav__link ">About</a></li>
             </ul>
           </nav>
-          <div class="header__login">
-            <ul class="nav">
-              <li><a href="#" class="login__item login_log">Log in</a></li>
-              <li><a href="#" class="login__item login_sign">Sign Up</a></li>
+          <div class="header__login login">
+            <ul class="login__list">
+              <li class="login__item"><a href="#" class="login__link">Log In</a></li>
+              <li class="login__item"><a href="#" class="login__link login__link-round">Sign Up</a></li>
             </ul>
           </div>
-          <div class="header__lang">
+          <div class="header__lang lang">
             <a href="#" class="lang__current">Eng</a>
             <ul class="lang__list">
-              <li><a class="lang_extra" href="#">Рус</a></li>
+              <li><a class="lang__extra" href="#">Рус</a></li>
             </ul>
           </div>
         </div>
@@ -258,62 +259,70 @@
         </div>
       </section>
       <!-- FAQ -->
+      <!-- CONTACTS -->
+      <section class="contacts">
+        <div class="contacts__container container">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a href="#" class="contacts__link button">
+                <svg class="icon icon-telegram">
+                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                </svg> Telegram bot </a>
+            </li>
+            <li class="contacts__item">
+              <a href="#" class="contacts__link button">
+                <svg class="icon icon-telegram">
+                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                </svg> Telegram group </a>
+            </li>
+            <li class="contacts__item">
+              <a href="#" class="contacts__link button">
+                <svg class="icon icon-telegram">
+                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                </svg> Telegram channel </a>
+            </li>
+            <li class="contacts__item"><a href="#" class="contacts__link_mail">support@neurobot.trading</a></li>
+          </ul>
+          <form action="" class="contacts__form">
+            <h3 class="contacts__title"><span>Subscribe</span> to our news</h3>
+            <input type="text" class="contacts__input" placeholder="e-mail">
+            <button class="contacts__button button">Subscribe</button>
+          </form>
+        </div>
+      </section>
+      <!-- CONTACTS -->
       <!-- FOOTER -->
       <footer class="footer">
-        <div class="container footer__container">
+        <div class="footer__container container">
+          <img src="./img/box-darkS.png" alt="box-decor" class="footer__box1 box">
+          <img src="./img/box-2.png" alt="box-decor" class="footer__box2 box">
           <div class="footer__bg"></div>
-          <img src="./img/box-2.png" alt="box-decor" class="footer__box1">
-          <img src="./img/box-darkM.png" alt="box-decor" class="footer__box2">
-          <div class="footer__telegram telegram">
-            <ul class="telegram__links-wrapper">
-              <li><a class="telegram__link button" href="#">
-                  <svg class='telegram__icon' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(29, 53, 78)" d="M0.404,9.588 L5.704,11.561 L7.756,18.150 C7.886,18.572 8.403,18.728 8.746,18.448 L11.700,16.044 C12.009,15.790 12.451,15.779 12.774,16.013 L18.103,19.876 C18.469,20.143 18.989,19.941 19.081,19.498 L22.983,0.749 C23.084,0.267 22.608,-0.137 22.147,0.042 L0.398,8.420 C-0.138,8.626 -0.134,9.385 0.404,9.588 ZM7.424,10.510 L17.782,4.140 C17.968,4.027 18.159,4.277 17.999,4.425 L9.451,12.361 C9.151,12.639 8.957,13.013 8.902,13.419 L8.611,15.574 C8.573,15.861 8.168,15.891 8.089,15.612 L6.969,11.683 C6.840,11.234 7.027,10.755 7.424,10.510 Z" />
-                  </svg> Telegram bot </a></li>
-              <li><a class="telegram__link button" href="#">
-                  <svg class='telegram__icon' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(29, 53, 78)" d="M0.404,9.588 L5.704,11.561 L7.756,18.150 C7.886,18.572 8.403,18.728 8.746,18.448 L11.700,16.044 C12.009,15.790 12.451,15.779 12.774,16.013 L18.103,19.876 C18.469,20.143 18.989,19.941 19.081,19.498 L22.983,0.749 C23.084,0.267 22.608,-0.137 22.147,0.042 L0.398,8.420 C-0.138,8.626 -0.134,9.385 0.404,9.588 ZM7.424,10.510 L17.782,4.140 C17.968,4.027 18.159,4.277 17.999,4.425 L9.451,12.361 C9.151,12.639 8.957,13.013 8.902,13.419 L8.611,15.574 C8.573,15.861 8.168,15.891 8.089,15.612 L6.969,11.683 C6.840,11.234 7.027,10.755 7.424,10.510 Z" />
-                  </svg> Telegram group </a></li>
-              <li><a class="telegram__link button" href="#">
-                  <svg class='telegram__icon' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23px" height="20px">
-                    <path fill-rule="evenodd" fill="rgb(29, 53, 78)" d="M0.404,9.588 L5.704,11.561 L7.756,18.150 C7.886,18.572 8.403,18.728 8.746,18.448 L11.700,16.044 C12.009,15.790 12.451,15.779 12.774,16.013 L18.103,19.876 C18.469,20.143 18.989,19.941 19.081,19.498 L22.983,0.749 C23.084,0.267 22.608,-0.137 22.147,0.042 L0.398,8.420 C-0.138,8.626 -0.134,9.385 0.404,9.588 ZM7.424,10.510 L17.782,4.140 C17.968,4.027 18.159,4.277 17.999,4.425 L9.451,12.361 C9.151,12.639 8.957,13.013 8.902,13.419 L8.611,15.574 C8.573,15.861 8.168,15.891 8.089,15.612 L6.969,11.683 C6.840,11.234 7.027,10.755 7.424,10.510 Z" />
-                  </svg> Telegram channel </a></li>
-            </ul>
-            <a href="mailto:support@neurobot.trading" class="telegram__mail ">support@neurobot.trading</a>
-          </div>
-          <form action="/" class="footer__form form">
-            <h3 class="form__heading"><span>Subscribe</span> to our news</h3>
-            <input type="email" class="form__input" placeholder="e-mail">
-            <button class="button form__button" type="button">Subscribe</button>
-          </form>
-          <div class="footer__baseline baseline">
-            <ul class="baseline__socials socials">
-              <li><a href="#" class="socials__item">
-                  <svg class='facebook' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="24px">
-                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M8.990,7.328 L5.653,7.328 L5.653,4.216 C5.653,3.634 6.112,3.161 6.680,3.161 L9.733,3.161 L10.732,-0.005 L6.166,-0.005 C3.898,-0.005 2.059,1.885 2.059,4.216 L2.059,7.328 L0.005,7.328 L0.005,10.494 L2.059,10.494 L2.059,23.994 L5.653,23.994 L5.653,10.494 L8.219,10.494 L8.990,7.328 Z" />
-                  </svg>
-                </a></li>
-              <li><a href="#" class="socials__item">
-                  <svg class='insta' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="19px">
-                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M17.000,4.000 C15.895,4.000 15.000,3.104 15.000,2.000 C15.000,0.895 15.895,-0.000 17.000,-0.000 C18.105,-0.000 19.000,0.895 19.000,2.000 C19.000,3.104 18.105,4.000 17.000,4.000 ZM8.000,19.000 C3.582,19.000 -0.000,15.418 -0.000,11.000 C-0.000,6.582 3.582,3.000 8.000,3.000 C12.418,3.000 16.000,6.582 16.000,11.000 C16.000,15.418 12.418,19.000 8.000,19.000 ZM8.000,6.000 C5.239,6.000 3.000,8.239 3.000,11.000 C3.000,13.761 5.239,16.000 8.000,16.000 C10.761,16.000 13.000,13.761 13.000,11.000 C13.000,8.239 10.761,6.000 8.000,6.000 Z" />
-                  </svg>
-                </a></li>
-              <li><a href="#" class="socials__item">
-                  <svg class='youtube' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="10px">
-                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M0.012,9.983 L0.012,0.007 L10.002,4.993 L0.012,9.983 Z" />
-                  </svg>
-                </a></li>
-              <li><a href="#" class="socials__item">
-                  <svg class='vk' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="10px">
-                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M17.281,0.435 L14.362,0.435 C14.119,0.435 13.896,0.565 13.781,0.775 C13.781,0.775 12.617,2.878 12.243,3.586 C11.237,5.492 10.586,4.894 10.586,4.010 L10.586,0.961 C10.586,0.430 10.147,0.000 9.605,0.000 L7.411,0.000 C6.803,-0.044 6.216,0.224 5.858,0.707 C5.858,0.707 6.972,0.531 6.972,2.003 C6.972,2.368 6.992,3.419 7.009,4.300 C7.017,4.651 6.736,4.941 6.378,4.951 C6.188,4.954 6.006,4.878 5.880,4.739 C4.982,3.513 4.238,2.185 3.663,0.786 C3.563,0.572 3.345,0.434 3.104,0.435 C2.471,0.435 1.205,0.435 0.453,0.435 C0.203,0.434 0.000,0.630 -0.001,0.874 C-0.002,0.927 0.007,0.980 0.027,1.030 C0.832,3.197 4.301,10.006 8.260,10.006 L9.928,10.006 C10.291,10.006 10.586,9.716 10.586,9.359 L10.586,8.374 C10.586,8.023 10.875,7.737 11.232,7.737 C11.397,7.737 11.556,7.800 11.675,7.910 L13.671,9.750 C13.849,9.913 14.086,10.006 14.331,10.006 L16.951,10.006 C18.215,10.006 18.215,9.146 17.526,8.481 C17.041,8.012 15.292,6.204 15.292,6.204 C14.983,5.889 14.953,5.401 15.222,5.053 C15.788,4.324 16.713,3.129 17.105,2.616 C17.641,1.917 18.612,0.435 17.281,0.435 Z" />
-                  </svg>
-                </a></li>
-            </ul>
-            <ul class="baseline__aside aside">
-              <li><a href="#" class="aside__item">Cookies</a></li>
-              <li><a href="#" class="aside__item">Privacy Policy</a></li>
-            </ul>
-          </div>
+          <ul class="footer__social-list">
+            <li class="footer__social"><a href="#" class="footer__icon">
+                <svg class="icon icon-face">
+                  <use xlink:href="img/sprite.svg#icon-face"></use>
+                </svg>
+              </a></li>
+            <li class="footer__social"><a href="#" class="footer__icon">
+                <svg class="icon icon-insta">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
+              </a></li>
+            <li class="footer__social"><a href="#" class="footer__icon">
+                <svg class="icon icon-youtube">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a></li>
+            <li class="footer__social"><a href="#" class="footer__icon">
+                <svg class="icon icon-vk">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a></li>
+          </ul>
+          <ul class="footer__aside">
+            <li class="footer__aside-item"><a href="#" class="footer__aside-link">Cookies</a></li>
+            <li class="footer__aside-item"><a href="#" class="footer__aside-link">Privacy Policy</a></li>
+          </ul>
         </div>
       </footer>
       <!-- FOOTER -->
