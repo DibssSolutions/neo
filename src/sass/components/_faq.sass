@@ -4,7 +4,7 @@
 	color: $darkblue
 	border-radius: 16px
 	max-width: 1170px
-	width: 90%
+	width: 95%
 	margin: 112px auto
 	&__img
 		position: absolute
@@ -17,14 +17,15 @@
 			left: -20%
 	&__container
 		max-width: 1082px
-		padding: 0 10px
+		padding: 80px
+		padding-left: 55px
 	&__heading
 		+f(72px, 600)
-		padding: 80px 30px 55px
-		margin: 0 auto
 		line-height: 1
+		margin-bottom: 50px
 		& span
 			font-weight: 200
+			display: block
 		+md
 			+f(48px, 600)
 			max-width: 540px
@@ -38,9 +39,6 @@
 		margin-top: 70px
 
 .accordion
-	margin-left: 30px
-	+sm
-		margin-left: 0
 	&__item
 		display: flex
 		cursor: pointer

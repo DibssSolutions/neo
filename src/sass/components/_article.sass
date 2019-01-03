@@ -6,43 +6,33 @@ article
 	background: #fff
 	color: $darkblue
 	border-radius: 16px
-	// max-height: 1160px
-	overflow: hidden
+	padding: 80px 80px 100px 100px
+	+md
+		padding: 40px
+	+sm
+		padding: 30px 10px
 	&__heading
 		+f(60px, 600)
-		padding: 80px 100px 0
+		padding-bottom: 35px
 		+md
 			+f(48px, 600)
-			padding: 40px
-			padding-bottom: 0
 		+sm
-			padding: 40px 10px
 			text-align: center
 			+f(36px, 600)
 
 .post
-	display: flex
-	max-width: 1100px
-	margin: 0 auto
-	flex-direction: column
-	flex-wrap: wrap
-	max-height: 1120px
-	padding: 35px
-	align-items: flex-end
+	column-count: 2
+	column-gap: 70px
 	+md
-		max-height: 950px
+		column-gap: 30px
 	+sm
-		max-height: none
-		align-items: center
-		padding: 20px
+		column-count: 1
 .post__item
-	display: flex
-	max-width: 460px
-	word-wrap: break-word
-	width: 50%
-	margin: 0 18px 45px 0
+	display: inline-flex
+	&:not(:last-child)
+		margin-bottom: 40px
 	& svg
-		margin-right: 27px
+		margin-right: 25px
 		+md
 			margin-right: 10px
 	& p
