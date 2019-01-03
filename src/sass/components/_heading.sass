@@ -8,10 +8,12 @@
 	&_white
 		color: $white
 
-.heading-small
-	+f(36px, 600)
+.title-mid
+	+f(60px, 600)
 	+md
-		+f(27px, 600)
+		font-size: 48px
+	+sm
+		font-size: 30px
 
 .subheading
 	+f(48px, 600)
@@ -19,13 +21,20 @@
 		+f(36px, 600)
 	+sm
 		+f(30px, 600)
+
+.heading-small
+	+f(36px, 600)
+	+md
+		+f(27px, 600)
+
+
 .descr
-	+f(18px, 300)
+	// +f(18px, 300)
 	line-height: 2
 	&_dark
 		color: $black
 	+md
-		+f(14px, 300)
+		// +f(14px, 300)
 		line-height: 1.6
 	+sm
-		+f(14px, 300)
+		// +f(14px, 300)

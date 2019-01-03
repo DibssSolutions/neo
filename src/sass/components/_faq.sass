@@ -1,14 +1,9 @@
 .faq
-	position: relative
-	background: $white
-	color: $darkblue
-	border-radius: 16px
-	max-width: 1170px
-	width: 95%
-	margin: 112px auto
+	margin: 112px 0
+	padding: 0 15px
 	&__img
 		position: absolute
-		top: 10%
+		top: 100px
 		left: -7.7%
 		+md
 			left: 80%
@@ -16,23 +11,23 @@
 		+sm
 			left: -20%
 	&__container
-		max-width: 1082px
+		background: $white
+		color: $darkblue
+		border-radius: 16px
+		max-width: 1170px
 		padding: 80px
-		padding-left: 55px
+		padding-left: 100px
+		position: relative
 	&__heading
-		+f(72px, 600)
 		line-height: 1
 		margin-bottom: 50px
 		& span
 			font-weight: 200
 			display: block
 		+md
-			+f(48px, 600)
 			max-width: 540px
 			padding: 40px
 			margin: 0
-		+sm
-			+f(36px, 600)
 	+md
 		margin-bottom: 0
 	+sm
@@ -74,10 +69,5 @@
 		display: none
 		background-color: white
 		overflow: hidden
-		+f(18px, 300)
 		cursor: text
 		line-height: 2
-		+md
-			+f(16px, 300)
-		+sm
-			+f(14px, 300)

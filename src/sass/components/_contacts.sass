@@ -12,54 +12,28 @@
 			align-items: center
 			flex-direction: column
 			padding: 0 15px
-	&__list
-		+mwidth(410)
-		text-align: center
-		padding: 20px
-		+md
-			max-width: 300px
-		+sm
-			order: 2
-	&__item
-		&:not(:last-child)
-			margin-bottom: 25px
-	&__link
-		color: $darkblue
-		background-color: $white
-		padding: 21px
-		&_mail
-			+f(18px, 600)
-		+tr(400ms)
-		+hover
-			color: $white
-			background-color: $darkblue
-			.icon-telegram
-				fill: $white
-	&__form
-		border: 16px solid $lightnavy
-		border-radius: 8px
-		padding: 45px 60px 55px
-		line-height: 1
-		+md
-			padding: 30px 35px 40px
-			max-width: 380px
-		+sm
-			border: 12px solid $lightnavy
-			padding: 28px 28px 35px
-			margin-bottom: 30px
-			display: flex
-			flex-direction: column
-			align-items: center
-			width: 100%
+	
+.subscribe-form
+	border: 16px solid $lightnavy
+	border-radius: 8px
+	padding: 45px 60px 55px
+	line-height: 1
+	+md
+		padding: 30px 35px 40px
+		max-width: 380px
+	+sm
+		border: 12px solid $lightnavy
+		padding: 28px 28px 35px
+		margin-bottom: 30px
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 100%
 	&__title
-		+f(60px, 200)
+		font-weight: 200
 		span
 			font-weight: 600
 			display: block
-		+md
-			font-size: 48px
-		+sm
-			font-size: 36px
 	&__input
 		margin: 35px 0 48px
 		width: 100%
@@ -81,6 +55,31 @@
 		+tr(300ms)
 		+hover
 			background: lighten($darkblue, 5%)
+
+.contact-btn
+	+mwidth(410)
+	text-align: center
+	padding: 20px
+	+md
+		max-width: 300px
+	+sm
+		order: 2
+	&__item
+		&:not(:last-child)
+			margin-bottom: 25px
+	&__link
+		color: $darkblue
+		background-color: $white
+		padding: 21px
+		&_mail
+			+f(18px, 600)
+		+tr(400ms)
+		+hover
+			color: $white
+			background-color: $darkblue
+			.icon-telegram
+				fill: $white
+
 
 
 .icon-telegram

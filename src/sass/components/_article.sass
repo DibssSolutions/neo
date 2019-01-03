@@ -12,13 +12,9 @@ article
 	+sm
 		padding: 30px 10px
 	&__heading
-		+f(60px, 600)
 		padding-bottom: 35px
-		+md
-			+f(48px, 600)
-		+sm
+		+ms
 			text-align: center
-			+f(36px, 600)
 
 .post
 	column-count: 2
@@ -32,16 +28,15 @@ article
 	&:not(:last-child)
 		margin-bottom: 40px
 	& svg
+		flex: 0 0 50px
 		margin-right: 25px
 		+md
 			margin-right: 10px
 	& p
-		+f(18px, 300)
-		max-width: 80%
+		font-weight: 300
 		margin-top: -10px
 		line-height: 2
-		+md
-			+f(14px, 300)
+		flex-grow: 1
 		+sm
 			line-height: 22px
 		+ms
