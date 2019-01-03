@@ -10,6 +10,7 @@
 	text-align: center
 	outline: none
 	cursor: pointer
+	line-height: 1.4
 	&:focus, &:hover
 		text-decoration: none
 		outline: none
@@ -19,18 +20,27 @@
 	+sm
 		max-width: 260px
 
+.button_sm
+	padding: 12px 25px
+	background: $white
+	border-radius: 16px
+	color: $darkblue
+	line-height: 1
+	+md
+		padding: 9px 20px
+
 .button_white
 	color: $darkblue
-	background: $white
-	+tr(300ms)
+	background-color: $white
+	transition: color 300ms, background-color 300ms
 	+hover
 		color: $white
-		background: $darkblue
+		background-color: $darkblue
 
 .button_320
 	min-width: 320px
 	+md
 		min-width: 260px
 
-.button_100
+.button_full
 	width: 100%

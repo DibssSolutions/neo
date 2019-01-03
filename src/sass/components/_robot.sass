@@ -7,10 +7,11 @@
 			padding: 0 5px
 	&__img
 		position: absolute
-		top: -135px
-		left: -40px
+		top: -178px
+		left: -45px
 		pointer-events: none
 		z-index: 1
+		width: 1095px
 		+md
 			width: 826px
 		+sm
@@ -31,18 +32,17 @@
 			margin: 60px auto 0
 			padding: 0
 			min-height: 265px
-		& h2
-			color: $white
-		& p
-			+f(30px, 600)
-			margin: 7px 0 20px 13px
-			line-height: 1.6
-			+md
-				+f(18px, 600)
+	&__description
+		+f(30px, 600)
+		margin: 7px 0 0 13px
+		line-height: 1.6
+		+md
+			+f(18px, 600)
 	&__button
-		+tr(300ms)
+		margin-top: 20px
+		+tr(background-color 300ms)
 		+hover
-			background: lighten($darkblue, 5%)
+			background-color: lighten($darkblue, 5%)
 	&__tablet-wrapper
 		width: 100%
 		background: #fff

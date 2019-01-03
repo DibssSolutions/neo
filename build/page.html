@@ -39,10 +39,8 @@
             </ul>
           </nav>
           <div class="header__login login">
-            <ul class="login__list">
-              <li class="login__item"><a href="#" class="login__link">Log In</a></li>
-              <li class="login__item"><a href="#" class="login__link login__link-round button_white">Sign Up</a></li>
-            </ul>
+            <a href="#" class="login__link login__item">Log In</a>
+            <a href="#" class="login__item button button_white button_sm">Sign Up</a>
           </div>
           <div class="header__lang lang">
             <a href="#" class="lang__current">Eng</a>
@@ -58,10 +56,10 @@
         <div class="container robot_container">
           <div class="robot__heading">
             <h2 class="heading">Forecasting Exchange Rates</h2>
-            <p>of Cryptocurrencies<br>by Neural Network Algorithm</p>
+            <div class="robot__description">of Cryptocurrencies<br>by Neural Network Algorithm</div>
             <button type="button" class="button robot__button button_320">Join Free For 3 Days</button>
           </div>
-          <img class="robot__img" src="./img/robot2.png" alt="robot">
+          <img class="robot__img" src="./img/robot.png" alt="robot">
           <img class="robot__img robot__img-small" src="./img/robot-S.png" alt="robot">
           <div class="robot__tablet-wrapper">
             <div class="robot__tablet-inner">
@@ -78,15 +76,17 @@
       <!-- FORECAST -->
       <section class="forecast">
         <div class="container forecast__container">
-          <h3 class="forecast__heading title-mid">Popular forecasts</h3>
-          <p class="forecast__desc">The forecasts are updated every 30 minutes</p>
-          <ul class="forecast__currency currency">
-            <li class="currency__item"><button type="button" class="currency__link">btc</button></li>
-            <li class="currency__item"><button type="button" class="currency__link">ltc</button></li>
-            <li class="currency__item"><button type="button" class="currency__link">eth</button></li>
-            <li class="currency__item"><button type="button" class="currency__link">xrp</button></li>
-            <li class="currency__item"><button type="button" class="currency__link">dash</button></li>
-            <li class="currency__item"><button type="button" class="currency__link">xmr</button></li>
+          <div class="forecast__heading">
+            <h3 class="title-mid">Popular forecasts</h3>
+            <div class="forecast__description">The forecasts are updated every 30 minutes</div>
+          </div>
+          <ul class="forecast__currency button_border">
+            <li class="button_border__item"><button type="button" class="button_border__link">btc</button></li>
+            <li class="button_border__item"><button type="button" class="button_border__link">ltc</button></li>
+            <li class="button_border__item"><button type="button" class="button_border__link">eth</button></li>
+            <li class="button_border__item"><button type="button" class="button_border__link">xrp</button></li>
+            <li class="button_border__item"><button type="button" class="button_border__link">dash</button></li>
+            <li class="button_border__item"><button type="button" class="button_border__link">xmr</button></li>
           </ul>
         </div>
         <img src="./img/box-darkS.png" alt="box-dark" class="forecast__box1">
