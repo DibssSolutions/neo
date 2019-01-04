@@ -23,17 +23,13 @@ article
 		column-gap: 30px
 	+sm
 		column-count: 1
-.post__item
-	display: inline-flex
-	&:not(:last-child)
-		margin-bottom: 40px
-	& svg
+	&__icon
 		flex: 0 0 50px
 		margin-right: 25px
 		margin-top: 10px
 		+md
 			margin-right: 10px
-	& p
+	&__description
 		font-weight: 300
 		line-height: 2
 		flex-grow: 1
@@ -46,3 +42,7 @@ article
 	+sm
 		max-width: none
 		width: 100%
+.post__item
+	display: inline-flex
+	&:not(:last-child)
+		margin-bottom: 40px

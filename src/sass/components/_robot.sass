@@ -40,7 +40,6 @@
 			+f(18px, 600)
 	&__button
 		margin-top: 20px
-		+tr(background-color 300ms)
 		+hover
 			background-color: lighten($darkblue, 5%)
 	&__tablet-wrapper
@@ -53,6 +52,7 @@
 		align-items: center
 		position: relative
 		padding: 48px
+		// min-height: 720px
 		+md
 			margin-top: 136px
 			padding: 24px
@@ -66,6 +66,7 @@
 	&__tablet-inner
 		width: 100%
 		border-radius: 8px
+		overflow: hidden
 		background: $darkgray
 		display: flex
 		justify-content: center
@@ -75,7 +76,6 @@
 		right: 0
 		bottom: 0
 		left: 0
-		padding-bottom: 7.5%
 	&__tablet-icon-wrapper
 		display: block
 		width: 120px
@@ -115,7 +115,7 @@
 		+sm
 			display: none
 .robot__tablet-video
-
+	padding: 4% 0
 .robot__img-small
 	display: none
 	+sm
