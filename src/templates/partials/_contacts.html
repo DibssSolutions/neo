@@ -1,21 +1,25 @@
 <section class="contacts">
 	<div class="contacts__container container">
-		<ul class="contacts__left contact-btn">
-			{% set telega = ['Telegram bot', 'Telegram group', 'Telegram channel'] %}
-			{% for item in telega %}
-				<li class="contact-btn__item">
-					<a href="#" class="contact-btn__link button button_100">
-						{{ mixins.icon('telegram') }}
-						{{ item }}
-					</a>
-				</li>
-			{% endfor %}
-			<li class="contact-btn__item"><a href="#" class="contact-btn__link_mail">support@neurobot.trading</a></li>
-		</ul>
-		<form action="" class="contacts__right subscribe-form">
-			<h3 class="subscribe-form__title title-mid"><span>Subscribe</span> to our news</h3>
-			<input type="text" class="subscribe-form__input" placeholder="e-mail">
-			<button class="subscribe-form__button button button_100">Subscribe</button>
-		</form>
+		<div class="contacts__left">
+			<ul class="contact-btn">
+				{% set telega = ['Telegram bot', 'Telegram group', 'Telegram channel'] %}
+				{% for item in telega %}
+					<li class="contact-btn__item">
+						<a href="#" class="contact-btn__link button button_full">
+							{{ mixins.icon('telegram') }}
+							{{ item }}
+						</a>
+					</li>
+				{% endfor %}
+				<li class="contact-btn__item"><a href="#" class="contact-btn__link_mail">support@neurobot.trading</a></li>
+			</ul>
+		</div>
+			<div class="contacts__right">
+			<form action="" class="subscribe-form">
+				<h3 class="subscribe-form__title title-mid"><span>Subscribe</span> to our news</h3>
+				<input type="text" class="subscribe-form__input" placeholder="e-mail">
+				<button class="subscribe-form__button button button_full">Subscribe</button>
+			</form>
+		</div>
 	</div>
 </section>

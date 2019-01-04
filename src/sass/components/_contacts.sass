@@ -6,13 +6,17 @@
 		justify-content: space-between
 		align-items: center
 		+md
-			max-width: 780px
+			max-width: 840px
 		+sm
 			flex-wrap: wrap
 			align-items: center
 			flex-direction: column
 			padding: 0 15px
-	
+		+ms
+			padding-bottom: 60px
+	&__left
+		+sm
+			order: 2
 .subscribe-form
 	border: 16px solid $lightnavy
 	border-radius: 8px
@@ -57,13 +61,11 @@
 			background: lighten($darkblue, 5%)
 
 .contact-btn
-	+mwidth(410)
+	width: 410px
 	text-align: center
 	padding: 20px
 	+md
-		max-width: 300px
-	+sm
-		order: 2
+		width: 304px
 	&__item
 		&:not(:last-child)
 			margin-bottom: 25px
