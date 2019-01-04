@@ -52,7 +52,6 @@
 		align-items: center
 		position: relative
 		padding: 48px
-		// min-height: 720px
 		+md
 			margin-top: 136px
 			padding: 24px
@@ -60,7 +59,7 @@
 		+sm
 			margin-top: 265px
 			padding: 10px
-			max-width: 500px
+			max-width: 400px
 			left: 50%
 			transform: translateX(-50%)
 	&__tablet-inner
@@ -115,7 +114,14 @@
 		+sm
 			display: none
 .robot__tablet-video
-	padding: 4% 0
+	height: 624px
+	+md
+		height: 420px
+	+sm
+		height: 250px
+	+ms
+		height: 170px
+
 .robot__img-small
 	display: none
 	+sm
