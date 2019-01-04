@@ -54,9 +54,6 @@
 		+sm
 			margin: 10px 0 25px
 	&__button
-		padding: 20px
-		margin: 0 auto
-		+tr(300ms)
 		+hover
 			background: lighten($darkblue, 5%)
 
@@ -70,15 +67,9 @@
 		&:not(:last-child)
 			margin-bottom: 25px
 	&__link
-		color: $darkblue
-		background-color: $white
-		padding: 21px
 		&_mail
 			+f(18px, 600)
-		+tr(400ms)
 		+hover
-			color: $white
-			background-color: $darkblue
 			.icon-telegram
 				fill: $white
 
@@ -89,4 +80,4 @@
 	margin-right: 8px
 	position: relative
 	top: 4px
-	+tr(400ms)
+	+tr(fill 300ms)
