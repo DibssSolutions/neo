@@ -54,7 +54,7 @@
 		position: relative
 		padding: 48px
 		+md
-			margin-top: 144px
+			margin-top: 136px
 			padding: 24px
 			max-width: 768px
 		+sm
@@ -75,16 +75,25 @@
 		right: 0
 		bottom: 0
 		left: 0
-		padding-bottom: 10%
-	&__tablet-icon
+		padding-bottom: 7.5%
+	&__tablet-icon-wrapper
+		display: block
+		width: 120px
+		height: 120px
+		background-image: url(../img/play.png)
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
 		+vcenter
 		+sm
-			& svg
-				width: 50%
-				height: 50%
-				position: relative
-				left: 50%
-				transform: translateX(-50%)
+			width: 60px
+	&__tablet-icon
+		+arr(42, 42, $white, r)
+		+vcenter
+		left: calc(50% + 7px)
+		+sm
+			+arr(22, 22, $white, r)
+			left: calc(50% + 3px)
 	&__box1
 		position: absolute
 		top: 6.2%
@@ -105,13 +114,6 @@
 			top: 340px
 		+sm
 			display: none
-.robot__tablet-video
-	+md
-		height: 420px
-	+sm
-			height: 280px
-	+ms
-		height: 170px
 
 .robot__img-small
 	display: none

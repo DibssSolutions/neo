@@ -1,6 +1,19 @@
 .forecast
 	margin: 140px auto 0
 	position: relative
+	&__bg
+		background-color: $darkblue
+		width: 500%
+		height: 245%
+		position: absolute
+		z-index: -5
+		+rotate(30)
+		left: -200%
+		top: -600px
+		+md
+			top: -200px
+		+ms
+			top: -100px
 	&__container
 		max-width: 1080px
 		+sm
@@ -17,7 +30,7 @@
 		display: flex
 		flex-wrap: wrap
 		margin-top: 40px
-		margin-right: -12px
+		margin-right: -16px
 		+sm
 			margin-top: 20px
 	&__box1
