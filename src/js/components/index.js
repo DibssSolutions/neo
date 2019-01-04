@@ -19,9 +19,11 @@ toggle.onclick = function() {
   var icon = document.getElementsByClassName('header__toggle-icon')[0];
   var nav = document.querySelector('.nav');
   icon.classList.toggle('header__toggle-icon_active');
-  if (nav.style.display === 'flex') {
-    nav.style.display = 'none';
-  } else {
-    nav.style.display = 'flex';
-  }
+  nav.classList.toggle('nav-opened');
+  // if (nav.style.display === 'flex') {
+  //   nav.style.display = 'none';
+  // } else {
+  //   nav.style.display = 'flex';
+  // }
+
 };

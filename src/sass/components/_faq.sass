@@ -28,9 +28,9 @@
 	&__heading
 		line-height: 1
 		margin-bottom: 50px
-		& span
-			font-weight: 200
-			display: block
+	&__heading-thin
+		font-weight: 200
+		display: block
 	+md
 		margin-bottom: 0
 	+sm
@@ -39,14 +39,16 @@
 .accordion
 	&__item
 		display: flex
+		flex-wrap: wrap
+		align-items: center
 		cursor: pointer
 		padding-bottom: 27px
-		flex-wrap: wrap
 		line-height: 1.5
 		&:last-child
 			padding-bottom: 50px
 	&__circle
 		+circle(36)
+		align-self: flex-start
 		background: $navy
 		flex: none
 		position: relative

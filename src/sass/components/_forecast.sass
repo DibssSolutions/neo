@@ -15,13 +15,14 @@
 		+ms
 			top: -100px
 	&__container
-		max-width: 1080px
+		max-width: 1010px
 		+sm
 			padding: 0 15px
 	&__heading
-		padding: 0 20px
+		padding: 8px 0
 	&__description
 		+f(24px, 600)
+		margin-top: 8px
 		+md
 			+f(18px, 600)
 		+sm
@@ -29,7 +30,7 @@
 	&__currency
 		display: flex
 		flex-wrap: wrap
-		margin-top: 40px
+		margin-top: 35px
 		margin-right: -16px
 		+sm
 			margin-top: 20px
@@ -54,7 +55,7 @@
 	+md
 		margin-top: 40px
 
-.button_border
+.button-border
 	&__item
 		&:not(:last-child)
 			margin-right: 30px
@@ -65,31 +66,9 @@
 			+sm
 				margin-right: 10px
 				margin-bottom: 10px
-	&__link
-		display: inline-block
-		text-align: center
-		text-transform: uppercase
-		border: 8px solid #223e5c
-		background: transparent
-		min-width: 136px
-		padding: 17px 24px
-		border-radius: 8px
-		+f(30px, 700)
-		color: $white
-		transition: .3s
-		+hover
-			background: $navy
-			border: 8px solid $navy
-		+md
-			+f(18px, 700)
-			min-width: 100px
-			padding: 12px
-		+sm
-			min-width: 90px
-
 
 .graph
-	margin: 40px auto 0
+	margin: 10px auto 0
 	position: relative
 	&__img
 		display: block

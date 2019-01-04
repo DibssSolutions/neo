@@ -11,6 +11,7 @@
 	outline: none
 	cursor: pointer
 	line-height: 1.4
+	transition: color 300ms, background-color 300ms
 	&:focus, &:hover
 		text-decoration: none
 		outline: none
@@ -27,14 +28,6 @@
 	+md
 		padding: 9px 20px
 
-.button_white
-	color: $darkblue
-	background-color: $white
-	transition: color 300ms, background-color 300ms
-	+hover
-		color: $white
-		background-color: $darkblue
-
 .button_320
 	min-width: 320px
 	+md
@@ -43,3 +36,31 @@
 .button_full
 	width: 100%
 	padding: 20px
+
+.button_border
+	text-transform: uppercase
+	border: 8px solid #223e5c
+	background: transparent
+	min-width: 136px
+	padding: 14px
+	border-radius: 8px
+	+f(30px, 700)
+	color: $white
+	transition: border 300ms, background-color 300ms
+	+hover
+		background-color: $navy
+		border: 8px solid $navy
+	+md
+		+f(18px, 700)
+		min-width: 100px
+		padding: 12px
+	+sm
+		min-width: 90px
+
+.button_white
+	color: $darkblue
+	background-color: $white
+	transition: color 300ms, background-color 300ms
+	+hover
+		color: $white
+		background-color: $darkblue

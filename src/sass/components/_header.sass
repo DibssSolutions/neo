@@ -1,14 +1,14 @@
 .header
-	padding: 63px 0 40px
+	padding: 45px 0 60px
 	+f(16px, 600)
 	+md
-		padding: 58px 0 17px
+		padding: 45px 0 17px
 		+f(14px, 600)
 	+sm
 		padding: 22px 5px
 	&__container
 		display: flex
-		align-items: flex-start
+		align-items: center
 		max-width: 1096px
 		+sm
 			padding: 0 5px
@@ -39,18 +39,26 @@
 			+f(9.75, 500)
 	&__nav
 		margin-left: auto
-		line-height: 2.6
+	&__login
+		margin-right: 30px
+		padding: 5px 0
+		border-bottom: 2px solid transparent
+		+tr(border-bottom 300ms)
+		+hover
+			border-bottom: 2px solid $white
 		+md
 			display: none
-	&__login
-		line-height: 2.6
+	&__login-btn
+		margin-right: 15px
 		+md
-			line-height: 2
 			display: none
 	&__lang
-		margin-right: 20px
+		margin-right: 15px
+		position: relative
+		top: 18px
 		+md
 			display: none
+			padding: 2px
 
 .header__toggle
 	cursor: pointer
